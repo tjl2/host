@@ -7,3 +7,8 @@ the whole URL at my new host command.
 
 Simply install this somewhere, then symlink it to somewhere in your path that precedes
 /usr/bin (usually /usr/local/bin will be the best place).
+
+## Note on paths on Mac OS X
+My preference is to put this in /usr/local/bin, but OS X seems to put this path after
+/usr/bin. To solve this, modify `/etc/paths` and move /usr/local/bin before /usr/bin in 
+the list. All new shells will now have $PATH modified.
