@@ -2,4 +2,4 @@
 
 require 'uri'
 
-puts `/usr/bin/host #{URI.parse(ARGV[0]).host}`
+puts `/usr/bin/host #{URI.parse(ARGV[0]).host || ARGV[0]}`
